@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Nikunj Sachdeva</div>
+        <ul class="navbar-links" style="list-style: none;">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="Home">
+        <div class="intro">
+            <p id="hello">Hello!</p>
+            <p id="name">I'm </p> 
+            <p id="namee">Nikunj Sachdeva </p> 
+            <p id="typing-animation"><span id="word"></span></p>
+        </div>
+    </section>
+    <section id="About">
+        <h1 id="h1">ABOUT ME</h1>
+        <div class="about-content">
+            <p id="intro">
+                Hi, I’m Nikunj Sachdeva, a 3rd year Computer Science Engineering student specializing in Artificial Intelligence and 
+                Machine Learning at Manipal University Jaipur. I’m passionate about leveraging technology to create innovative solutions, 
+                particularly in deep learning and natural language processing. I thrive on the satisfaction of seeing my projects come to life 
+                and function effectively, which drives my motivation to tackle complex challenges. I am currently working on a solo research 
+                project in the field of AI that uses data analysis and natural language processing. My goal is to contribute to impactful 
+                projects that shape the future of technology and positively impact society. I am dedicated to continuously expanding my skills 
+                and knowledge to achieve this.
+            </p>
+            <img src="static/PP.png" alt="Profile Picture">
+        </div>
+    </section>
+    <section id="Skills">
+        <h1 style="color: #999999;">Skills</h1>
+        <div class="skills-container">
+            <div class="skill">
+                <p id="skill-name">SQL</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+                <p class="percentage">85%</p>
+                <p id="skill-name">PYTHON</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+                <p class="percentage">90%</p>
+                <p id="skill-name">MACHINE LEARNING</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+                <p class="percentage">60%</p>
+                <p id="skill-name">JAVA</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+                <p class="percentage">90%</p>
+                <p id="skill-name">SOLIDITY, ETHEREUM</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+                <p class="percentage">60%</p>
+                <p id="skill-name">NATURAL LANGUAGE PROCESSING</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+                <p class="percentage">40%</p>
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <h1 id="project" style="color: white;">PROJECTS</h1>
+        <div class="project-container">
+            <div class="project-content">
+                <h1 style="color: wheat;">Gas Cylinder Management System (GCMS)</h1>
+                <p id="intro">The elements (GCMS) it incorporated were intended to improve order processing and return scheduling so
+                    that the efficiency of the operation could be maximized. Python with SQLite was utilized for database
+                    management, and Tkinter was used for user interface design. This made it possible to simplify workflow,
+                    which allowed accurate record-keeping, thus providing a high level of customer satisfaction.</p>
+            </div>
+            <img src="static/GCMS.png" alt="GCMS" class="project-img">
+        </div>
+        <div class="project-container">
+            <div class="project-content">
+                <h1 style="color: wheat;">DECENTRALIZED VOTING SYSTEM (DVS)</h1>
+                <p id="intro">The Decentralised Voting System was developed on the Ethereum blockchain and was based on Flask and
+                    Web3.py for integration with Ethereum smart contracts. SQLite3 database and Solidity language were used for
+                    user management and smart contract development. Create a ballot, add a political party, and vote features
+                    were also added.
+                    </P>
+                    <P id="intro" style="font-style: italic;">
+                    “Despite guidance from mentors, we encountered significant challenges with gas limits, which provided
+                    valuable insights into the complexities of decentralized systems.”</p>
+            </div>
+            <img src="static/DVS.png" alt="GCMS" class="project-img">
+        </div>
+        <div class="project-container">
+            <div class="project-content">
+                <h1 style="color: wheat;">AUTHME(CERTIFICATE GENERATION & VALIDATION)</h1>
+                <p id="intro">This project is a web application designed to automate the generation and distribution of 
+                    bonafide certificates for students. It uses Flask as the backend framework, SQLite for the database, and HTML/CSS with 
+                    Jinja2 for the frontend. Security features include Werkzeug for password hashing and PyOTP for two-factor authentication. 
+                    The application generates PDF certificates using ReportLab and embeds QR codes generated with the qrcode library. It utilizes
+                    smtplib and MIME for email services to send certificates to students. The app aims to streamline administrative tasks by
+                    simplifying the approval workflow and ensuring secure, efficient certificate distribution.</p>
+            </div>
+            <img src="static/AUTHME.png" alt="GCMS" class="project-img">
+        </div>
+    </section>
+    <!-- <section id="Resume" style="padding: 20px;">
+        <h1 id="project" style="color: white;">RESUME</h1>
+    </section> -->
+    <section id="resume">
+        <h1 id="project" class="resume" style="color: white;">RESUME</h1>
+        
+        <div class="resume-section">
+            <h3>Education</h3>
+            <hr>
+            <div class="resume-box">
+                <strong>Bachelor of Technology in Computer Science and Engineering</strong>
+                <span>Specialization: Artificial Intelligence and Machine Learning</span>
+                <span>Manipal University Jaipur</span>
+                <span>Graduation: 2026</span>
+            </div>
+            <div class="resume-box">
+                <strong>High School</strong>
+                <span>Sky Hawk International School, New Delhi</span>
+                <span>Graduated: March 2022</span>
+            </div>
+            <div class="resume-box">
+                <strong>Metric</strong>
+                <span>Delhi Public School, Bhiwani, Haryana</span>
+                <span>Graduated: March 2020</span>
+            </div>
+        </div>
+    
+        <div class="resume-section">
+            <h3>Experience</h3>
+            <hr>
+            <div class="resume-box">
+                <strong>Deputy Director of Outreach</strong>
+                <span>INDGenius MUJ | Manipal University Jaipur</span>
+                <!-- <span>June 2023 - August 2023</span> -->
+                <p>As Deputy Director of Outreach at INDGenius MUJ Chapter, I lead strategic initiatives to expand our reach and engage with 
+                    diverse students. I collaborate with team members to increase and foster community connections. Together, we aim to raise
+                    awareness and drive impact in our mission-driven initiatives.</p>
+            </div>
+        </div>
+    
+        <div class="resume-section">
+            <h3>Certifications and Awards</h3>
+            <hr>
+            <ul class="resume-list">
+                <li>
+                    <strong>Data Structures University Of California San Diego</strong>
+                    <span>Coursera, Nov 2023</span>
+                </li>
+                <li>
+                    <strong>DP Database Programming With SQL Learner - English</strong>
+                    <span>Oracle academy, Nov 2023</span>
+                </li>
+            </ul>
+            <ul class="resume-list">
+                <li>
+                    <strong>DFo Database Foundations Learner - English</strong>
+                    <span>Oracle academy, Oct 2023</span>
+                </li>
+                <li>
+                    <strong>Introduction to Web Development with HTML, CSS, JavaScript</strong>
+                    <span>Coursera, June 2024</span>
+                </li>
+            </ul>
+            <ul class="resume-list">
+                <li>
+                    <strong>Introduction to Cloud Computing</strong>
+                    <span>Coursera, June 2024</span>
+                </li>
+                <li>
+                    <strong>Coding Contest Code-It-On by IEEE</strong>
+                    <span>Manipal University Jaipur, 2023</span>
+                </li>
+            </ul>
+            <ul class="resume-list">
+                <li>
+                    <strong>LNMHacks 6.0 Hackathon</strong>
+                    <span>LNMIIT Jaipur, 2024</span>
+                </li>
+            </ul>
+            <a class="button-85" style="color: white;" target="_blank" href="static\CV.pdf">Download CV</a>
+        </div>
+    </section>
+    <section id="Contact">
+        <h1 id="project" style="color: white;">Contact Me</h1>
+        <form action="contact.html">
+            <button type="submit" class='glowing-btn'><span class='glowing-txt'>C<span class='faulty-letter'>L</span>ICK</span></button>
+        </form>
+    </section>
+
+    
+    
+    <script src="static/script.js"></script>
+</body>
+</html>
