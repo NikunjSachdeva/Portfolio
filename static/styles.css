@@ -175,7 +175,7 @@ body {
 .about-content {
     display: flex;
     align-items: flex-start; /* Align items to the start (top) */
-    gap: 20px; /* Space between the paragraph and image */
+    gap: 20px; /* Space between the paragraph and image */  
 }
 
 .about-content img {
@@ -660,8 +660,16 @@ hr {
     .project-img {
         width: 100%; /* Ensure full width */
     }
+    #pop{
+      transform: translateY(80px);
+      display: flex;
+    }
 }
-
+/* @media only screen and (max-width: 392px){
+  #pop{
+    transform: translate3d(-125px,-500px,0px);
+  }
+} */
 @media only screen and (max-width: 480px) {
     .navbar-links li {
         margin-right: 0; /* Reset margin */
@@ -673,4 +681,45 @@ hr {
     #intro {
         margin-top: 10px; /* Further adjusted margin */
     }
+}
+@media only screen and (max-width: 600px) {
+  #namee,#h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  
+  .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .about-content img {
+      width: 80%;
+      height: auto;
+      margin: -50px 20px 77px; /* Add some margin for better spacing */
+      
+  }
+}
+
+/* Ensure the projects section text is centered on small screens */
+@media only screen and (max-width: 600px) {
+  .project-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0; /* Adjust margin for spacing */
+  }
+
+  .project-container img {
+      width: 80%;
+      height: auto;
+      margin: 20px 0; /* Add some margin for better spacing */
+  }
+  
 }
