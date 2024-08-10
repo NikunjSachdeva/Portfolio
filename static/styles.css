@@ -101,6 +101,9 @@ body {
     .navbar-links a {
         font-size: 1em;
     }
+    #typing-animation{
+      font-size: 25px;
+    }
 }
 
 #hello {
