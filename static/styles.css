@@ -704,6 +704,9 @@ hr {
       margin: -50px 20px 77px; /* Add some margin for better spacing */
       
   }
+  #typing-animation{
+    font-size: 30px;
+  }
 }
 
 /* Ensure the projects section text is centered on small screens */
