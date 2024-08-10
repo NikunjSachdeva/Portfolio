@@ -681,6 +681,9 @@ hr {
     #intro {
         margin-top: 10px; /* Further adjusted margin */
     }
+    #typing-animation{
+      font-size: 25px;
+    }
 }
 @media only screen and (max-width: 600px) {
   #namee,#h1{
@@ -724,5 +727,7 @@ hr {
       height: auto;
       margin: 20px 0; /* Add some margin for better spacing */
   }
-  
+  #typing-animation{
+    font-size: 25px;
+  }
 }
