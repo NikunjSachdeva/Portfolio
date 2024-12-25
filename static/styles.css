@@ -1,0 +1,438 @@
+/* Skills section */
+
+#Skills {
+    padding: 50px 0;
+    background-color: black; /* Set background to pure black */
+    text-align: center;
+  }
+  
+  /* Container to hold all skill cards */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Show only three cards in a line */
+    gap: 40px; /* Increase space between the cards */
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  /* Skill card styling */
+  .skill-card {
+    background-color: #000; /* Set card background to pure black */
+    color: #fff;
+    padding: 30px; /* Increase padding inside the cards */
+    border-radius: 15px;
+    border: 1px solid transparent;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, border 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .skill-card .skill-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect on skill card */
+  .skill-card:hover {
+    transform: scale(1.05);
+    border: 1px solid #ffcc00; /* Border color changes to golden yellow */
+    background-color: #ffcc00; /* Background changes to golden yellow on hover */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  .skill-card:hover .skill-name {
+    color: #000; /* Text color changes to black on hover */
+  }
+  
+  /* Hover background animation similar to the framer-motion effect */
+  .skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .skill-card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 900px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr); /* Show two cards per row for medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* Show one card per row for small screens */
+    }
+  }
+  
+
+
+
+
+
+  .resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#resume {
+    padding: 2em;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6em;
+}
+
+.resume-section {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.resume-section h3 {
+    color: #ffcc00;
+    margin-bottom: 1em;
+}
+
+hr {
+    border: 1px solid #ffcc00;
+    margin-bottom: 1em;
+}
+
+.resume-box {
+    border: 1px solid #ffcc00;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #1a1a1a;
+    text-align: left;
+    color: #ffffff;
+}
+
+.resume-box span {
+    display: block;
+    color: #cccccc;
+}
+
+.resume-box p {
+    margin-top: 0.5em;
+    color: #ffffff;
+}
+
+.resume-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+.resume-list li {
+    border: 1px solid #ffcc00;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #1a1a1a;
+}
+
+.resume-list li span {
+    display: block;
+    color: #cccccc;
+}
+
+
+
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+
+
+#Contact {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add some padding around the section */
+    background-color: black;
+}
+
+:root {
+    --glow-color: hsl(186 100% 69%);
+  }
+  .glowing-btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 1em;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+  }
+  
+  .glowing-txt {
+    float: left;
+    margin-right: -0.8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+  }
+  
+  .faulty-letter {
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+  }
+  
+  .glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+  }
+  
+  .glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+  }
+  
+  .glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .glowing-btn:hover .glowing-txt {
+    animation: none;
+  }
+  
+  .glowing-btn:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:after {
+    opacity: 1;
+  }
+  
+  @keyframes faulty-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 0.1;
+    }
+    4% {
+      opacity: 0.5;
+    }
+    19% {
+      opacity: 0.5;
+    }
+    21% {
+      opacity: 0.1;
+    }
+    23% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.4;
+    }
+  
+    87% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+  
+    2% {
+      opacity: 1;
+    }
+  
+    8% {
+      opacity: 0.1;
+    }
+  
+    9% {
+      opacity: 1;
+    }
+  
+    12% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    30% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+    72% {
+      opacity: 0.2;
+    }
+  
+    77% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+  
+  @keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .glowing-btn{
+      font-size: 1em;
+    }
+  }
